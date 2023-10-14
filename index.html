@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bootstrap demo</title>
+    <meta name="keywords" content="ClashRoyale">
+    <meta name="author" content="Berkay Kaan Uzun">
+    <title>Clash Royale</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,11 +21,13 @@
   <body>
     <main>
       <nav
-        class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm"
+        class="navbar navbar-expand-lg navbar-light fixed-top shadow-sm bg-black"
         id="mainNav"
       >
         <div class="container px-5">
-          <a class="navbar-brand fw-bold" href="#page-top">Start Bootstrap</a>
+          <a class="navbar-brand" href="#page-top"
+            ><img class="logo-nav" src="./assets/img/svg/cryl.svg" alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -39,18 +43,22 @@
           <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ms-auto me-4 my-3 my-lg-0">
               <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#features">Features</a>
+                <a class="nav-link me-lg-3 text-light" href="#features"
+                  >Features</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link me-lg-3" href="#download">Download</a>
+                <a class="nav-link me-lg-3 text-light" href="#download"
+                  >Download</a
+                >
               </li>
             </ul>
             <button
-              class="btn btn-primary rounded-pill px-3 mb-2 mb-lg-0"
+              class="btn btn-nav rounded-pill px-3 mb-2 mb-lg-0"
               data-bs-toggle="modal"
               data-bs-target="#feedbackModal"
             >
-              <span class="d-flex align-items-center">
+              <span class="d-flex align-items-center text-fb">
                 <i class="bi-chat-text-fill me-2"></i>
                 <span class="small">Send Feedback</span>
               </span>
@@ -59,57 +67,185 @@
         </div>
       </nav>
 
-      <header class="bg-light">
+      <header id="page-top" class="bg-white">
         <div class="container">
           <div class="row align-items-center justify-content-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6 text-mobile">
               <div class="mb-5">
                 <h1 class="header-title lh-1 mt-5 mb-4">
-                  Showcase your app beautifully.
+                  Epic Real-Time <br />
+                  Card Battles
                 </h1>
                 <p class="text-muted lead fw-normal">
-                  Launch your mobile app landing page faster with this free,
-                  open source theme from Start Bootstrap!
+                  Clash Royale is a real-time multiplayer game starring the
+                  Royales, your favourite Clash characters and much, much more.
+                  Collect and upgrade dozens of cards featuring the Clash of
+                  Clans troops, spells and defenses you know and love, as well
+                  as the Royales: Princes, Knights, Baby Dragons and more.
                 </p>
               </div>
-              <img
-                class="btn-download"
-                src="./assets/img/svg/google-play-badge.svg"
-                alt=""
-              />
-              <img
-                class="btn-download"
-                src="./assets/img/svg/app-store-badge.svg"
-                alt=""
-              />
+              <a
+                target="_blank"
+                href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=tr&gl=US"
+              >
+                <img
+                  class="btn-download"
+                  src="./assets/img/svg/googleplay.svg"
+                  alt=""
+              /></a>
+              <a
+                target="_blank"
+                href="https://apps.apple.com/us/app/clash-royale/id1053012308"
+              >
+                <img
+                  class="btn-download"
+                  src="./assets/img/svg/appstore.svg"
+                  alt=""
+              /></a>
             </div>
             <div class="col-lg-6">
               <div class="d-flex justify-content-center">
-                <img
-                  class="img-fluid img-phone"
-                  src="./assets/img/phone-screen.png"
-                  alt=""
-                />
+                <img class="img-fluid" src="./assets/img/phone-1.webp" alt="" />
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <section class="bg-primary padding-sec">
+      <section class="bg-gradient padding-sec">
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-lg-8">
               <div class="align-items-center">
                 <h2 class="text-center text-white fs-1 h2">
-                  "An intuitive solution to a common problem that we all face,
-                  wrapped up in a single app!"
+                  "It's a rewarding experience as you work towards improving
+                  your deck and climbing the ranks."
                 </h2>
               </div>
               <div class="d-flex justify-content-center mt-4">
+                <a target="_blank" href="https://supercell.com/en/">
+                  <img
+                    class="img-brand"
+                    src="./assets/img/svg/supercell.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="padding-sec">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-4 order-1">
+              <div class="d-flex justify-content-center">
                 <img
-                  class="img-brand"
-                  src="./assets/img/svg/tnw-logo.svg"
+                  class="img-fluid img-phone"
+                  src="./assets/img/phone-2.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="col-10 col-lg-8 mb-5 mb-lg-0">
+              <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6 mb-5">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        class="main-icon"
+                        src="assets/img/svg/logo-icon.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h3 class="text-center">Strategy</h3>
+                    <p class="text-muted text-center">
+                      Explore successful strategies in Clash Royale. Study
+                      guides about card selection, elixir management, and
+                      tactics to win battles.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-10 col-lg-6">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        class="main-icon"
+                        src="assets/img/svg/balon.svg"
+                        alt=""
+                      />
+                    </div>
+
+                    <h3 class="text-center">Cards</h3>
+                    <p class="text-muted text-center">
+                      Learn about the cards in Clash Royale. Discover the
+                      characteristics of each card, usage strategies, and
+                      effective combinations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5 justify-content-center">
+                <div class="col-10 col-lg-6">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        class="main-icon"
+                        src="assets/img/svg/kurukafa.svg"
+                        alt=""
+                      />
+                    </div>
+                    <h3 class="text-center">Battles</h3>
+                    <p class="text-muted text-center">
+                      Understand how in-game battles work and learn strategies
+                      for success in battles. Develop tactics to defeat
+                      opponents.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-10 col-lg-6">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-center">
+                      <img
+                        class="main-icon"
+                        src="assets/img/svg/yarasa.svg"
+                        alt=""
+                      />
+                    </div>
+
+                    <h3 class="text-center">Tournaments</h3>
+                    <p class="text-muted text-center">
+                      Explore Clash Royale tournaments and competitive play. Get
+                      info on participation, rewards, and organization.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-light py-5">
+        <div class="container">
+          <div class="row gx-5 justify-content-center align-items-center">
+            <div class="col-lg-5 text-mobile">
+              <h2 class="display-4 lh-1 mb-4 pt-4 pt-lg-0">
+                Rise on the Strategy Throne!
+              </h2>
+              <p class="text-muted lead fw-normal">
+                In the game, players aim to destroy enemy towers by creating
+                their own decks of cards. Each card has its unique
+                characteristics and abilities. Developing the right strategies
+                for when to use each card is the key to victory
+              </p>
+            </div>
+            <div class="col-lg-6">
+              <div class="d-flex justify-content-center align-items-center">
+                <img
+                  class="img-skeleton mx-lg-5"
+                  src="./assets/img/iskelet.webp"
                   alt=""
                 />
               </div>
@@ -118,54 +254,163 @@
         </div>
       </section>
 
-      <section class="padding-sec">
-        <div class="container">
-          <div class="row justify-content-center align-items-center">
-            <div class="col-lg-4">
-              <img class="img-fluid img-phone" src="./assets/img/phone-screen.png" alt="" />
-            </div>
-            <div class="col-lg-8">
-              <div class="row gx-5 ">
-                <div class="col-lg-6 mb-5">
-                    <div class="d-flex flex-column ">
-                    <i class="bi bi-phone main-icon text-center text-primary"></i>
-                    <h3 class="text-center">Device Mockups
-                    </h3>
-                    <p class="text-muted text-center">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                </div>
-                 </div>
-                 <div class="col-lg-6">
-                    <div class="d-flex flex-column ">
-                    <i class="bi bi-phone main-icon text-center text-primary"></i>
-                    <h3 class="text-center">Device Mockups
-                    </h3>
-                    <p class="text-muted text-center">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                </div>
-                 </div>
-              </div>
-              <div class="row gx-5">
-                <div class="col-lg-6">
-                    <div class="d-flex flex-column ">
-                    <i class="bi bi-phone main-icon text-center text-primary"></i>
-                    <h3 class="text-center">Device Mockups
-                    </h3>
-                    <p class="text-muted text-center">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                </div>
-                 </div>
-                 <div class="col-lg-6">
-                    <div class="d-flex flex-column ">
-                    <i class="bi bi-phone main-icon text-center text-primary"></i>
-                    <h3 class="text-center">Device Mockups
-                    </h3>
-                    <p class="text-muted text-center">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                </div>
-                 </div>
+      <section class="bg-hero">
+        <div class="hero-content z-1 position-relative">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 px-5">
+                <h2 class="display-1 text-light fw-normal">
+                  Interested in working with us?
+                </h2>
+                <a href="mailto:berkaykaanuzun@gmail.com">
+                  <button
+                    type="button"
+                    class="btn btn-outline-light rounded-pill mt-4 py-3 px-5 fs-5"
+                  >
+                    Contact Us
+                  </button>
+                </a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="bg-black py-5">
+        <div class="container">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-lg-8">
+              <div class="align-items-center">
+                <h2 id="download" class="text-center text-white fs-2 h2">
+                  Get the app now!
+                </h2>
+              </div>
+              <div class="d-flex justify-content-center mt-4 column-gap-3">
+                <a
+                  target="_blank"
+                  href="https://play.google.com/store/apps/details?id=com.supercell.clashroyale&hl=tr&gl=US"
+                >
+                  <img
+                    class="btn-download"
+                    src="./assets/img/svg/googleplay.svg"
+                    alt=""
+                  />
+                </a>
+                <a
+                  target="_blank"
+                  href="https://apps.apple.com/us/app/clash-royale/id1053012308"
+                >
+                  <img
+                    class="btn-download"
+                    src="./assets/img/svg/appstore.svg"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="bg-black py-4 mt-auto border-top border-dark">
+        <div class="container px-5">
+          <div
+            class="row align-items-center justify-content-center flex-column flex-sm-row"
+          >
+            <div class="col-auto">
+              <div class="small m-0 text-white">
+                <a
+                  class="text-decoration-none text-white d-none d-lg-block"
+                  href="https://www.linkedin.com/in/berkaykaanuzun/"
+                  >All rights reserved. © 2023 Berkay Kaan
+                  Uzun</a
+                >
+                <a
+                  class="d-block d-lg-none text-decoration-none text-white"
+                  href=""
+                  >Copyright © Berkay Kaan Uzun</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </main>
+
+    <!-- start modal -->
+    <div class="modal" id="feedbackModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header bg-gradient p-4">
+            <h5 class="modal-title text-light">Send Feedback</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form
+              action="https://formsubmit.co/berkaykaanuzun@gmail.com"
+              method="POST"
+            >
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingtext"
+                  name="name"
+                  required
+                />
+                <label for="floatingPassword">Full Name</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="floatingtext"
+                  name="phone"
+                />
+                <label class="text-dark-50" for="floatingtext"
+                  >Phone Number</label
+                >
+              </div>
+
+              <div class="form-floating mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="floatingInput"
+                  name="email"
+                  required
+                />
+                <label for="floatingInput">Email Address </label>
+              </div>
+              <div class="form-floating">
+                <textarea
+                  class="form-control text-area-h"
+                  id="floatingTextarea2"
+                  style="height: 100px"
+                  name="message"
+                ></textarea>
+                <label for="floatingTextarea2">Message</label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn-primary w-100 bg-gradient rounded-pill py-2"
+              >
+                Submit
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer border-none">
+            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end modal -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

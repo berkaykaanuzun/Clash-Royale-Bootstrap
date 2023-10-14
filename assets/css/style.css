@@ -1,26 +1,126 @@
-.btn-download{
-    width: 150px;
+.btn-download {
+  width: 150px;
 }
-.header-title{
-    font-weight: 300;
-    font-size: 5rem;
+.header-title {
+  font-weight: 300;
+  font-size: 4rem;
 }
-.img-phone{
-    width: 17rem;
+.img-phone {
+  width: 17rem;
 }
-header{
-padding: 9.5rem 0 5rem 0;
-}
-
-.img-brand{
-    width: 7rem;
+header {
+  padding: 9.5rem 0 5rem 0;
 }
 
-.padding-sec{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.img-brand {
+  width: 7rem;
+  filter: invert(1);
 }
 
-.main-icon{
-    font-size: 4rem;
+.padding-sec {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
+
+.main-icon {
+  width: 64px;
+  margin-bottom: 1rem;
+}
+
+.gradient-circle {
+  width: 35rem;
+  height: 35rem;
+}
+
+section.bg-hero {
+  background-image: url(../img/banner.webp);
+  background-size: cover;
+  padding: 15rem 0;
+  position: relative;
+  background-position: center;
+}
+
+.bg-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.text-area-h {
+  height: 10rem !important ;
+}
+
+.border-none {
+  border: none !important;
+}
+.logo-nav {
+  width: 200px;
+  height: 50px;
+}
+
+.bg-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 173, 68, 1) 30%,
+    rgba(31, 87, 170, 1) 100%
+  ) !important;
+}
+
+.icon-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(254, 173, 68, 1) 40%,
+    rgba(31, 87, 170, 1) 60%
+  ) ;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.img-skeleton{
+    width: 35rem;
+}
+
+.btn-nav{
+    background-color: rgba(254, 173, 68,1);
+}
+.btn-nav:hover{
+    background-color:rgba(31, 87, 170, 1);
+    color: #fff;
+}
+
+.btn-nav:active{
+    background: linear-gradient(
+        90deg,
+        rgba(254, 173, 68, 1) 30%,
+        rgba(31, 87, 170, 1) 70%);
+       
+        color: #fff !important;
+}
+
+
+
+@media (max-width: 1200px) {
+    .img-skeleton{
+        width: 30rem;
+    }
+    }
+
+
+@media (max-width: 992px) {
+.img-skeleton{
+    width: 25rem;
+}
+.text-mobile{
+    text-align: center;
+}
+}
+
+@media (max-width: 576px) {
+    .img-skeleton{
+        width: 20rem;
+    }
+    }
