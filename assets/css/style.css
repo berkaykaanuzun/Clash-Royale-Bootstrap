@@ -112,15 +112,38 @@ section.bg-hero {
 
 @media (max-width: 992px) {
 .img-skeleton{
-    width: 25rem;
+    width: 22rem;
 }
 .text-mobile{
     text-align: center;
+    font-size: 1rem;
+}
+.img-phone{
+  width: 12rem;
+}
+.header-title{
+  font-size: 2.5rem;
+}
+.text-info{
+  font-size: 1rem;
+}
+section.bg-hero{
+  background-image: url(../img/banner.webp);
+  background-size: cover;
+  padding: 10rem 0;
+  position: relative;
+  background-position: center;
+}
+.text-banner{
+  font-size: calc(1.325rem + .9vw);
 }
 }
 
 @media (max-width: 576px) {
     .img-skeleton{
-        width: 20rem;
+        width: 15rem;
+    }
+    .img-phone{
+      width: 10rem;
     }
     }
